@@ -98,15 +98,15 @@ public class LibraryManagementSystem {
                     System.out.print("Enter book author: ");
                     String author = scanner.nextLine();
                     System.out.print("Enter book ISBN: ");
-                    String isbn = scanner.nextLine();
-                    Book newBook = new Book(title, author, isbn);
+                    String uniqueBookNumber = scanner.nextLine();
+                    Book newBook = new Book(title, author, uniqueBookNumber);
                     library.addBook(newBook);
                     break;
 
                 case 2:
-                    System.out.print("Enter book ISBN to remove: ");
-                    String isbnToRemove = scanner.nextLine();
-                    library.removeBook(isbnToRemove);
+                    System.out.print("Enter unique book number to remove: ");
+                    String uniqueBookNumberInput = scanner.nextLine();
+                    library.removeBook(uniqueBookNumberInput);
                     break;
 
                 case 3:
